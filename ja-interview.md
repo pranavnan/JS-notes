@@ -72,4 +72,18 @@ Lexical scope in JavaScript refers to the ability of a function to access variab
 A scope refers to the current context of our code it can be either globally or locally defined.
 A lexical scope in JavaScript means that a variable defined outside function can be accessible inside of another function define after variable declaration
 
+```javascript
+let count = 0;
+(function f() {
+  if (count === 0) {
+    var count = 1;
+    console.log(count);
+  }
+  console.log(count);
+})();
+```
+output=> undefined
+This is because of variable hoisting in JavaScript. When the function f is called, the variable count is declared with the keyword var, which means that its declaration is hoisted to the top of the function scope. However, the assignment of the value 1 to count is not hoisted, so at the time the if condition is evaluated, the value of count is undefined.
+
+Therefore, the output of the first console.log statement is undefined, and the output of the second console.log statement is also undefined, because count has not been assigned any value in the function scope.
 
