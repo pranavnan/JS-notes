@@ -61,3 +61,15 @@ During creation phase, JavaScript, engine moves our variables, and function decl
 # TDZ
 
 Temporal Dead Zone. In JavaScript, TDZ is a period between the creation of a variable and its initialization, 
+
+# Currying 
+Currying is a function that takes one argument at a time and returns a new function expecting the next argument.
+Basically Currying doesn’t call a function. It just transforms a function. They are constructed by chaining closures by immediately returning their inner functions simultaneously.
+
+# Lexical scope
+Lexical scope in JavaScript refers to the ability of a function to access variables and parameters that are declared outside of its own scope. In other words, a function can access variables that are in its outer scope, but not vice versa.
+
+A scope refers to the current context of our code it can be either globally or locally defined.
+A lexical scope in JavaScript means that a variable defined outside function can be accessible inside of another function define after variable declaration
+
+
